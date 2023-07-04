@@ -1,0 +1,9 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿŒ’‹8 Îæï‘1
+g
+java:S1128"ERemove this unused import 'net.dv8tion.jda.api.entities.emoji.Emoji'.(¼üüûÿÿÿÿ8Ù¶Œ’1
+o
+java:S1128"RRemove this unused import 'net.dv8tion.jda.api.events.channel.ChannelCreateEvent'.(Ô¼Âò8Ù¶Œ’1
+
+java:S1128
+"]Remove this unused import 'net.dv8tion.jda.api.events.message.react.MessageReactionAddEvent'.(ÏÒ›†úÿÿÿÿ8Ù¶Œ’1

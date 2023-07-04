@@ -1,0 +1,22 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(’½ê¢8¬éµ’’1
+v
+java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(Äß’ö8¬éµ’’1
+Œ
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(âæêB8­éµ’’1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(é¿²Áøÿÿÿÿ8¯éµ’’1
+J
+java:S1172@"-Remove this unused method parameter "apiKey".(²çÈî8ãéµ’’1
+]	java:S125A"<This block of commented-out lines of code should be removed.(×½Ã‚úÿÿÿÿ8ãéµ’’1
+]	java:S125C"<This block of commented-out lines of code should be removed.(‹ÔƒÊøÿÿÿÿ8ãéµ’’1
+F
+java:S1128	"$Remove this unused import 'okhttp3'.(ê‚Ÿœþÿÿÿÿ8ÖÞÇ’’1
+R
+java:S1128"0Remove this unused import 'org.json.JSONObject'.(œÖ´üþÿÿÿÿ8ÖÞÇ’’1
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8ÖÞÇ’’1
+Q
+java:S1128"4Remove this unused import 'java.util.regex.Matcher'.(ëÅ›ã8×ÞÇ’’1
+V
+java:S1128"4Remove this unused import 'java.util.regex.Pattern'.(Ã•…Äúÿÿÿÿ8×ÞÇ’’1
