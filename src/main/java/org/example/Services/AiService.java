@@ -20,7 +20,6 @@ import java.util.regex.Pattern;
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class AiService {
-//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
     public static ArrayList<String> sendChatRequest(GptChatMessage message, String apiKey) {
         message.setMessageContent(validateMessage(message.getMessageContent()));
         List<ChatMessage> messageList = new ArrayList<ChatMessage>();

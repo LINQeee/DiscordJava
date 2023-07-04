@@ -1,10 +1,11 @@
 package org.example;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.interactions.commands.DefaultMemberPermissions;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.requests.GatewayIntent;
@@ -14,12 +15,21 @@ import org.example.Commands.BotCommands;
 import org.example.Events.EventsListener;
 import org.example.Services.MySqlService;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class Main {
 
-    public static Role BannedRole;
+    public static void main(String[] args) throws InterruptedException, IOException {
 
-    public static void main(String[] args) throws InterruptedException {
-        var jda = JDABuilder.createDefault("MTEwODM5MjkyNjIxNzc3MzE5Nw.GiBZEN.s0EWcTCjlnYn6WBkEWcxei-r5G8ZlmTN1qYz-0")
+        String json = new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir")+"/src/main/java/org/example/Data_github_hidden/keys.json")));
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode rootNode = objectMapper.readTree(json);
+        String token = rootNode.get("discord_token").asText();
+
+
+        var jda = JDABuilder.createDefault(token)
                 .setChunkingFilter(ChunkingFilter.ALL)
                 .setMemberCachePolicy(MemberCachePolicy.ALL)
                 .enableIntents(GatewayIntent.getIntents(GatewayIntent.ALL_INTENTS))
